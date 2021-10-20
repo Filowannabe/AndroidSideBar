@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.parcialfelipecorredor.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.parcialfelipecorredor.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.parcialfelipecorredor.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/createProfessorSchedule"
+        android:name="com.example.parcialfelipecorredor.CreateProfessorSchedule"
+        android:label="fragment_create_professor_schedule"
+        tools:layout="@layout/fragment_create_professor_schedule" />
+    <fragment
+        android:id="@+id/findProfessorSchedule"
+        android:name="com.example.parcialfelipecorredor.FindProfessorSchedule"
+        android:label="fragment_find_professor_schedule"
+        tools:layout="@layout/fragment_find_professor_schedule" />
+    <fragment
+        android:id="@+id/createProfessor"
+        android:name="com.example.parcialfelipecorredor.CreateProfessor"
+        android:label="fragment_create_professor"
+        tools:layout="@layout/fragment_create_professor" />
+    <fragment
+        android:id="@+id/findProfessor"
+        android:name="com.example.parcialfelipecorredor.FindProfessor"
+        android:label="fragment_find_professor"
+        tools:layout="@layout/fragment_find_professor" />
+    <fragment
+        android:id="@+id/createDiary"
+        android:name="com.example.parcialfelipecorredor.CreateDiary"
+        android:label="fragment_create_diary"
+        tools:layout="@layout/fragment_create_diary" />
+</navigation>
