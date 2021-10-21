@@ -45,40 +45,30 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <Spinner
+        android:id="@+id/week_combobox_create_schedule"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:layout_gravity="center|start"
         android:layout_margin="10dp"
-        android:hint="Week combobox">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/week_combobox_create_schedule"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="date" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
+        android:inputType="date">
+    </Spinner>
 
     <Button
+        android:id="@+id/calendar_input_one_create_schedule"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center|start"
         android:layout_margin="10dp"
-        android:text="Start date"
-        android:id="@+id/calendar_input_one_create_schedule">
-    </Button>
+        android:text="Start date" />
 
     <Button
+        android:id="@+id/calendar_input_two_create_schedule"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center|start"
         android:layout_margin="10dp"
-        android:text="End date"
-        android:id="@+id/calendar_input_two_create_schedule">
-    </Button>
-
+        android:text="End date" />
 
 
     <Button
