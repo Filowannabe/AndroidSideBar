@@ -2,8 +2,6 @@ package com.example.parcialfelipecorredor
 
 import android.os.Bundle
 import android.view.Menu
-import android.widget.ArrayAdapter
-import android.widget.Spinner
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -18,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
-    private var week = resources.getStringArray(R.array.week)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -30,20 +28,13 @@ class MainActivity : AppCompatActivity() {
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main)
-        val spinner = findViewById<Spinner>(R.id.week_combobox_create_schedule)
-        if (spinner != null) {
-            val adapter = ArrayAdapter(
-                this,
-                android.R.layout.simple_spinner_item, week
-            )
-            spinner.adapter = adapter
-
-        }
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_home,
+                R.id.nav_gallery,
+                R.id.nav_slideshow,
                 R.id.createProfessorSchedule,
                 R.id.findProfessorSchedule,
                 R.id.createProfessor,
