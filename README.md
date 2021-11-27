@@ -1,4 +1,4 @@
-# AlojateQuindioFrontend
+# Proyecto Android
 
 Presentacion del trabajo final para la asignatura de aplicaciones moviles, donde se da respuesta a las necesidades planteadas en <strong>Android studio</strong> con Kotlin.
 
